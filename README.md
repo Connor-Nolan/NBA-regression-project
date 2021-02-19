@@ -18,9 +18,9 @@ Evaluation and Assumptions:
 
 Evaluation of the models is something I do everytime I run them, which is usually every day there are NBA games being played. The images in this repository are one of the ways I evaluate the performance and check the linear regression assumptions. A few times I have found a mistake that I made while entering the data and have been able to correct them. Looking at the Q-Q plots for both models shows that our distribution is approximately normal which satisfies our normality assumption. The residual plots show that the residuals are pretty evenly spread throughout the plot which satisfies the homoscedasticity assumption. We also assume the scores of each game are independent of the other games. Our Cook's Distance plots show that we have a few points that have high leverage like the March 8th game between the Chicago Bulls and Brooklyn Nets. I have checked these games and the numbers are accurate they were just very strange basketball games. I could drop them from the dataset but I believe that weird things tend to happen in NBA games so I am going to leave them in. The R squared values of about .80 for both models suggest that the model is a good fit and also all input variables are shown to be statistically significant.
 
-My performance on games where the two models gave one team an edge against Las Vegas was about 54% which may not sound terrific but is profitable in the long run.
+My performance on games where the two models gave one team an edge against Las Vegas was about 54% which may not sound terrific but is profitable in the long run. It is also important to keep in mind that the 54% number comes from predicting the games before they occur so the inputs are estimated.
+
+Looking Forward: I have continued this NBA project with the start of the 2020-2021 season and have seen the model's predictions against the point spread have a 58.4% successful pick rate. It will be interesting to see if fans returning to more stadiums will impact the trends of the season so far.
 
 
-Looking Forward:
 
-I believe that my model performed well on the current season and is even doing well on the games currently being played in the Orlando bubble. Interestingly, even though there are no fans in attendance and all players are staying in Disney World hotels, the home teams have thus far had a slightly better home court advantage than they had in the pre-Covid-19 suspended season. I have also fit a model to the NBA data using the XGBoost package in R and will look to upload that in the future.
