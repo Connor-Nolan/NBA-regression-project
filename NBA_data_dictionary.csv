@@ -1,0 +1,27 @@
+Field Name,Data Type,Data Format,Description,Example
+Home,Character,Text (3),Team playing in their home arena,ATL
+Away,Character,Text (3),Team playing in their opponent's arena,BRK
+Date,Date,mm/dd/yyyy,Date the game was played ,10/29/2019
+Favorite,Character,Text (3),Team favored by Las Vegas to win the game,LAL
+Spread,Double,Number,The favorite must win by a number of points higher than the spread to cover,5.5
+TeamWin,Character,Text (3),The team that wins the game,CHI
+WinPoints,Integer,Number,Amount of points scored by winning team,105
+LosePoints,Integer,Number,Amount of points scored by losing team,104
+Homeptsposs,Double,Number,Amount of points scored by home team per 100 times they had the ball (possession),104.8
+Awayptsposs,Double,Number,Amount of points scored by away team per 100 times they had the ball (possession),101.9
+Homeefg,Double,Number,Field goal percentage for home team adjusted for 3 point shots,61.4
+Awayefg,Double,Number,Field goal percentage for away team adjusted for 3 point shots,59.5
+HomeTOV,Double,Number,Percentage of home team's possessions that end in a turnover,11.5
+AwayTOV,Double,Number,Percentage of away team's possessions that end in a turnover,14.5
+HomeOREB,Double,Number,Percentage of home team's shot attempts rebounded by the home team,22.5
+AwayOREB,Double,Number,Percentage of away team's shot attempts rebounded by the away team,21.9
+HomeFTR,Double,Number,Percentage of home team's possessions that end with free throws,19.6
+AwayFTR,Double,Number,Percentage of away team's possessions that end with free throws,19.2
+HomeRest,Character,,"Days off home team had before the game. All amounts over 2 are listed as ""3+""",3+
+AwayRest,Character,,"Days off away team had before the game. All amounts over 2 are listed as ""3+""",0
+Pick,Character,Text (3),Team predicted to cover the point spread by the model if run that day,GSW
+OT,Logical,,True if game went to overtime and 5 or more extra minutes were played,TRUE
+HomePoints,Integer,Number,Amount of points scored by home team,111
+AwayPoints,Integer,Number,Amount of points scored by away team,99
+Homeb2b,Logical,,True if home team played a game the day before this game,TRUE
+Awayb2b,Logical,,True if away team played a game the day before this game,FALSE
