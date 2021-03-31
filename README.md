@@ -4,7 +4,7 @@ Analysis and prediction of NBA game scores for the 2019-2020 NBA season.
 Introduction:
 	My Goal was to gather key statistics from NBA games and use them to predict the results of future games. In the NBA the better team wins a lot more often than not so I decided to try to beat the point spread set by Las Vegas instead of just predicting the winner.
 Measures were collected each day from cleaningtheglass.com and entered into an excel spreadsheet, this site was chosen because it does not count long shots taken only because the game clock is expiring and discounts
-"garbage time" stats where the winning team has a large lead and may sub in worse players or play worse than they otherwise would in order to rest their players. Point spreads were taken from Action Network. The csv file with the game data in this repository is up to date through the games played on August 17th, 2020.
+"garbage time" stats where the winning team has a large lead and may sub in worse players or play worse than they otherwise would in order to rest their players. Point spreads were taken from Action Network. The csv file with the game data in this repository is up to date through the games played on March 11, 2020.
 
 
 Method:
