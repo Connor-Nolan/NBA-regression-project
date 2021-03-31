@@ -1,6 +1,7 @@
 #Read in data from csv
 
 NBA_data<-read.csv("NBA19-20_github.csv", header=TRUE)
+NBA_data$Date <- as.Date(NBA_data$Date, format = "%m/%d/%Y")
 library(dplyr)
 NBA_data<-filter(NBA_data, is.na(OT))
 
