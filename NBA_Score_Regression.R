@@ -1,6 +1,6 @@
 #Read in data from csv
 
-NBA_data<-read.csv("NBA19-20.csv", header=TRUE)
+NBA_data<-read.csv("NBA19-20_github.csv", header=TRUE)
 library(dplyr)
 NBA_data<-filter(NBA_data, is.na(OT))
 
@@ -54,6 +54,8 @@ Picked_games$Push<-ifelse(Picked_games$Favorite==Picked_games$TeamWin & Picked_g
 Picked_games$Dog_cover<-ifelse(Picked_games$Favorite_cover==F & Picked_games$Push==F,T,F)
 
 #Did I predict the game correctly?
+
+Picked_games<-filter(Picked_games, Push == F)
 
 Picked_games$Correct<-ifelse((Picked_games$Favorite_cover==T & as.character(Picked_games$Pick)==as.character(Picked_games$Favorite))|(
   Picked_games$Dog_cover==T & as.character(Picked_games$Pick) != as.character(Picked_games$Favorite)
